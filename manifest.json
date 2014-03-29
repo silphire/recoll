@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2, 
+  "name": "recoll", 
+  "description": "Google Chromeの閲覧履歴を分析して、あなたにお伝えします。", 
+  "version": "0.1", 
+  "icons": {
+    "16": "icon/small.png", 
+    "48": "icon/medium.png", 
+    "128": "icon/large.png" 
+  }, 
+  "background": {
+    "scripts": [ "chrome/icon_clicked.js" ], 
+    "persistent": false
+  }, 
+  "browser_action": {
+    "default_icon": {
+      "19": "icon/icon-19.png", 
+      "38": "icon/icon-38.png" 
+    }, 
+    "default_title": "recoll" 
+  }, 
+  "permissions": [
+    "history"
+  ], 
+  "options_page": "chrome/options.html"
+}
+
